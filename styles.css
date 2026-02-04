@@ -80,3 +80,53 @@ body {
     border: 1px solid red;
 }
 
+
+
+form div {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+form div label {
+  font-size: 1rem;
+}
+
+form div input{
+  padding: 10px;
+  margin-top: 5px;
+}
+
+
+input:invalid {
+  outline: 1px solid red;
+}
+
+input:focus{
+  outline: 1px solid blue;
+}
+
+
+input {
+  appearance: none;
+  width: 75%;
+  border: 1px solid #E5E7EB;
+  font-family: 'Josefin Sans';
+  box-sizing: border-box;
+}
+
+.create-account {
+  display: flex;
+  justify-content: left;
+  padding: 1rem;
+  padding-left: 20px;
+}
+
+.create-account button {
+  width: 150px;
+  height: 45px;
+  border-radius: 8px;
+  box-shadow: rgb(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #DABD87;
+  font-family: 'Josefin Sans';
+}

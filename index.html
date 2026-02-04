@@ -17,7 +17,7 @@
         <div class="heading"></div>
         <div class="form-container">
             <div class="form-header">
-            <h1>Please fill out form</h1>
+            <h1>Please fill out the form</h1>
             </div>
             <form>
                 <div class="first-name">
@@ -30,7 +30,7 @@
                 </div>
                 <div>
                     <label for="user_email">Email Address:</label>
-                    <input type="email" id="user_email" name="user_email">
+                    <input type="email" id="user_email" name="user_email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address (e.g., name@domain.com)">
                 </div>
                 <div>
                     <label for="user_phone">Phone Number</label>
@@ -44,10 +44,14 @@
                     <label for="confirm_password">Confirm Password</label>
                     <input type="password" id="confirm_password" name="confirm_password">
                 </div>
+                
             </form>
 
         </div>
-        <div class="create-account"></div>
+        <form id="signup-form"></form>
+        <div class="create-account">
+         <button type="submit" form="signup-form">Create account</button>
+         </div>
     </div> 
 </body>
 </html>
