@@ -7,19 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="image"> 
         <img src="/images/library_books.jpg" alt="picture of a library">
+            <div class="overlay" aria-hidden="true">
+                <P>The Odin Project</P>
+            </div>
     </div>
     <div class ="container">
-        <div class="heading"></div>
+        <div class="heading">
+            <div>
+                <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi iste non accusamus, officiis odio suscipit harum repellat similique at distinctio alias aut veniam voluptas et voluptatum ea. Inventore, accusamus sed.
+                </p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit!</p>
+            </div>
+        </div>
         <div class="form-container">
             <div class="form-header">
             <h1>Please fill out the form</h1>
             </div>
-            <form>
+            <form id="signup-form">
                 <div class="first-name">
                     <label for="first_name">First Name</label>
                     <input type="text" name="first_name" id="first_name">
@@ -34,24 +50,27 @@
                 </div>
                 <div>
                     <label for="user_phone">Phone Number</label>
-                    <input type="number" id="user_phone" name="user_phone">
+                    <input type="text" id="user_phone" name="user_phone">
                 </div>
                 <div>
                     <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name="user_password">                    
+                    <input type="password" id="user_password" name="user_password" required minlength="10">                    
                 </div>
                 <div>
                     <label for="confirm_password">Confirm Password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="10">
                 </div>
                 
             </form>
 
         </div>
-        <form id="signup-form"></form>
-        <div class="create-account">
-         <button type="submit" form="signup-form">Create account</button>
-         </div>
+    <div class="create-account">
+        <button type="submit" form="signup-form">Create account</button>
+        <div>
+            <p>Already have an account? <a href="url">Log in</a></P>
+        </div>
+     </div>
+     
     </div> 
 </body>
 </html>
